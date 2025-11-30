@@ -1,18 +1,18 @@
-Congratulations for reaching this exercise! We are going to implement a Sudoku Validator. The goal is simple: given a **9x9 Sudoku grid**, determine if it's valid!
+Bu alıştırmaya kadar geldiğin için tebrikler! Şimdi bir Sudoku Validator implement edeceğiz. Amaç basit: verilen bir **9x9 Sudoku grid**’inin geçerli olup olmadığını belirlemek! 
 
-![Example of a Sudoku grid](https://wagon-public-datasets.s3.amazonaws.com/data-science-images/01-Python/sudoku.png)
 
-## Rules
+## Kurallar
 
-A Sudoku is valid if and only if:
+Bir Sudoku ancak ve ancak aşağıdaki koşullar sağlanıyorsa geçerlidir:
 
-- A row contains all numbers from `1` to `9`
-- A column contains all numbers from `1` to `9`
-- Each of the nine 3x3 little squares contains numbers from `1` to `9`
+-Her satır 1’den 9’a kadar tüm sayıları içerir
+-Her sütun 1’den 9’a kadar tüm sayıları içerir
+-Dokuz adet 3x3’lük küçük karelerin her biri 1’den 9’a kadar olan sayıları içerir
 
-## Data Model
 
-A Sudoku grid will be represented by a Python list of lists:
+## Veri Modeli
+
+Bir Sudoku grid’i, Python’da list of lists şeklinde temsil edilecektir:
 
 ```python
 grid = [
@@ -30,17 +30,17 @@ grid = [
 ]
 ```
 
-With that structure in mind, you can access a cell at row `i` and column `j` with the following statement:
+Bu yapıyı göz önünde bulundurduğunda, `i`’nci satır ve `j`’nci sütundaki hücreye şu şekilde erişebilirsin:
 
 ```python
 grid[i][j]
 ```
 
-💡 Remember that python list indices start at **`0`**, so `i` and `j` values are between `0` and `8`.
+💡 Unutma: Python list index’leri 0’dan başlar, yani `i` ve `j` değerleri 0 ile 8 arasındadır.
 
-## Exercise
+## Alıştırma
 
-Open the `sudoku.py` file and implement the `sudoku_validator()` method. To check if your code is working, run the tests with:
+`sudoku.py`dosyasını aç ve `sudoku_validator()` method’unu implement et.Kodunun çalışıp çalışmadığını kontrol etmek için testleri şu komutla çalıştır:
 
 ```bash
 make
